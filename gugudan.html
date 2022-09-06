@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      const dom = [];
+      let multiplyConunt = 0;
+      function elem() {
+        for (let i = 1; i < 10; i++) {
+          for (let j = 1; j < 10; j++) {
+            let result;
+            result = i * j;
+            // console.log(i + "*" + j + "=" + result);
+
+            dom.push(`<div>${i}*${j}=${result}`);
+            multiplyConunt++;
+          }
+          dom.push(`<br><br><br><br>`);
+        }
+      }
+
+      root = document.body.children[0];
+
+      elem();
+      root.innerHTML = dom.join("");
+      console.log(multiplyConunt);
+      // div = document.getElementsByTagName("div");
+      // console.dir(div);
+      // div.style.backgroundColor = "pink";
+      // div.style.width = "100px";
+      // div.style.height = "200px";
+
+      function sigma() {
+        for (let k, sum = 0; sum <= sum; sum += k);
+      }
+      //
+    </script>
+  </body>
+</html>
